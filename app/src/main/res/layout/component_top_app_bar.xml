@@ -17,7 +17,8 @@
 
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
-  android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
   android:layout_height="wrap_content"
   android:background="@color/green_200"
   android:clipToPadding="false"
@@ -55,10 +56,9 @@
                 android:layout_marginTop="14dp"
                 android:clickable="true"
                 android:focusable="true"
-                android:onClick="teamplate"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/event_toolbar_back_button_state" />
+                app:srcCompat="@drawable/state_event_toolbar_back_button" />
             <LinearLayout
                 android:id="@+id/linearLayout2"
                 android:layout_width="0dp"
@@ -104,10 +104,9 @@
                 android:layout_marginEnd="20dp"
                 android:clickable="true"
                 android:focusable="true"
-                android:onClick="teamplate"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/event_toolbar_share_button_state" />
+                app:srcCompat="@drawable/state_event_toolbar_share_button" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.appbar.MaterialToolbar>
 
@@ -135,5 +134,108 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar_team_ctf"
         app:title="Команда ЦФТ" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_profile"
+        style="@style/Widget.MyTheme.ToolbarProfile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_team_ctf_one">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorSurface">
+
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/photo_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/image_sample" />
+
+                <ImageView
+                    android:id="@+id/edit_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    app:srcCompat="@drawable/ic_edit_red" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/info"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="14dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/notification_button"
+                app:layout_constraintStart_toEndOf="@+id/frameLayout"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/title_profile"
+                    style="@style/Header2Neutral800"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Мария"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/description_profile"
+                    style="@style/Body2Neutral600"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="maryRalph@gmail.com"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/notification_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="14dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintEnd_toStartOf="@+id/settings_button"
+                app:layout_constraintStart_toEndOf="@+id/info"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/state_notifications_button" />
+
+            <ImageView
+                android:id="@+id/settings_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintBottom_toBottomOf="@+id/notification_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/notification_button"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/state_settings_button" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.appbar.MaterialToolbar>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
