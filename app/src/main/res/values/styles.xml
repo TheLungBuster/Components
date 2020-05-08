@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+~ Copyright (C) 2019 The Android Open Source Project
+~
+~ Licensed under the Apache License, Version 2.0 (the "License");
+~ you may not use this file except in compliance with the License.
+~ You may obtain a copy of the License at
+~
+~      http://www.apache.org/licenses/LICENSE-2.0
+~
+~ Unless required by applicable law or agreed to in writing, software
+~ distributed under the License is distributed on an "AS IS" BASIS,
+~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+~ See the License for the specific language governing permissions and
+~ limitations under the License.
+-->
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--Components-->
+
+    <!--Bottom Sheets-->
+    <style name="ThemeOverlay.MyTheme.BottomSheetDialog" parent="ThemeOverlay.MaterialComponents.Dialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/Animation.MyTheme.BottomSheet.Modal</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="bottomSheetStyle">@style/Widget.MyTheme.BottomSheet.Modal</item>
+        <item name="android:navigationBarColor">?attr/colorSurface</item>
+        <item name="android:navigationBarDividerColor" tools:ignore="NewApi">@android:color/transparent</item>
+    </style>
+    <style name="Widget.MyTheme.BottomSheet.Modal" parent="Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="shapeAppearanceOverlay">?attr/shapeAppearanceLargeComponent</item>
+    </style>
+
+    <!--Navigation Drawer-->
+    <style name="Widget.MyTheme.NavigationView" parent="Widget.MaterialComponents.NavigationView">
+        <item name="itemTextAppearance">?attr/textAppearanceBody2</item>
+    </style>
+
+    <!--Primary Button-->
+    <style name="Widget.MyTheme.PrimaryButton" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:textAppearance">?attr/textAppearanceBody1</item>
+        <item name="rippleColor">?attr/colorPrimaryVariant</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingStart">22dp</item>
+        <item name="android:paddingEnd">22dp</item>
+    </style>
+
+    <!--Secondary Button-->
+    <style name="Widget.MyTheme.SecondaryButton" parent="Widget.MyTheme.PrimaryButton">
+        <item name="backgroundTint">?attr/colorSecondary</item>
+        <item name="rippleColor">?attr/colorSecondaryVariant</item>
+        <item name="android:textColor">?attr/colorOnBackground</item>
+    </style>
+
+    <style name="Widget.MyTheme.AlertButton" parent="Widget.MyTheme.PrimaryButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="backgroundTint">?attr/colorSecondaryVariant</item>
+        <item name="rippleColor">?attr/colorOnSecondary</item>
+        <item name="android:textColor">?attr/colorOnBackground</item>
+    </style>
+
+    <!--Text Button-->
+    <style name="Widget.MyTheme.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textAppearance">?attr/textAppearanceBody1</item>
+    </style>
+
+    <!--Text Input Layout-->
+    <style name="Widget.MyTheme.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="hintTextColor">?attr/colorOnBackground</item>
+        <item name="boxBackgroundColor">@android:color/transparent</item>
+        <item name="shapeAppearance">?attr/shapeAppearanceSmallComponent</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="boxStrokeColor">?attr/colorOnSurface</item>
+    </style>
+    <style name="InputEditText">
+        <item name="android:textAppearance">?attr/textAppearanceBody1</item>
+        <item name="android:textColorHint">@color/chip_text_color</item>
+        <item name="android:background">@drawable/text_field_background</item>
+    </style>
+
+    <!--Chips-->
+    <style name="Widget.MyTheme.ChipsFilter" parent="Widget.MaterialComponents.Chip.Filter">
+        <item name="android:textColor">@color/chip_text_color</item>
+        <item name="chipBackgroundColor">?attr/colorSurface</item>
+        <item name="chipSurfaceColor">?attr/colorSecondaryVariant</item>
+        <item name="rippleColor">?attr/colorSecondaryVariant</item>
+        <item name="chipStrokeColor">@color/chip_stroke_color</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="chipMinHeight">30dp</item>
+    </style>
+
+    <style name="Widget.MyTheme.ChipsChoice" parent="Widget.MaterialComponents.Chip.Entry">
+        <item name="android:textColor">@color/chip_text_color</item>
+        <item name="chipBackgroundColor">?attr/colorSurface</item>
+        <item name="chipSurfaceColor">?attr/colorSecondaryVariant</item>
+        <item name="rippleColor">?attr/colorSecondaryVariant</item>
+        <item name="chipStrokeColor">@color/chip_stroke_color</item>
+        <item name="chipMinHeight">30dp</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="checkedIconVisible">false</item>
+    </style>
+
+    <style name="Widget.MyTheme.Radiobutton" parent="Widget.MaterialComponents.CompoundButton.RadioButton">
+        <item name="useMaterialThemeColors">false</item>
+        <item name="buttonTint">@color/togle_elements_color</item>
+    </style>
+
+    <style name="Widget.MyTheme.CheckBox" parent="Widget.MaterialComponents.CompoundButton.CheckBox">
+        <item name="useMaterialThemeColors">false</item>
+        <item name="buttonTint">@color/togle_elements_color</item>
+    </style>
+
+    <style name="CardWithGradientHeader6">
+        <item name="android:textAppearance">?attr/textAppearanceHeadline6</item>
+        <item name="android:textColor">@color/neutral_0</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="CardWithGradientBody2">
+        <item name="android:textAppearance">?attr/textAppearanceBody2</item>
+        <item name="android:textColor">@color/neutral_0</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="CardWithGradientSubtitle1">
+        <item name="android:textAppearance">?attr/textAppearanceSubtitle1</item>
+        <item name="android:textColor">@color/neutral_0</item>
+        <item name="android:textSize">11dp</item>
+    </style>
+
+    <style name="CardButton">
+        <item name="android:textAppearance">?attr/textAppearanceSubtitle1</item>
+        <item name="android:textColor">@color/neutral_0</item>
+        <item name="android:background">@drawable/card_time_shape</item>
+        <item name="android:textSize">11dp</item>
+    </style>
+
+    <style name="Body2Neutral0">
+        <item name="android:textAppearance">?attr/textAppearanceBody2</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="Body2Neutral400">
+        <item name="android:textAppearance">?attr/textAppearanceBody2</item>
+    </style>
+
+    <style name="Body2Neutral600">
+        <item name="android:textAppearance">?attr/textAppearanceBody2</item>
+        <item name="android:textColor">?attr/colorOnBackground</item>
+    </style>
+
+    <style name="Body2Orange600">
+        <item name="android:textAppearance">?attr/textAppearanceBody2</item>
+        <item name="android:textColor">@color/orange_600</item>
+    </style>
+
+    <style name="Body2Red500">
+        <item name="android:textAppearance">?attr/textAppearanceBody2</item>
+        <item name="android:textColor">@color/red_500</item>
+    </style>
+
+    <style name="Body1Neutral600">
+        <item name="android:textAppearance">?attr/textAppearanceBody1</item>
+    </style>
+
+    <style name="Header2Neutral0">
+        <item name="android:textAppearance">?attr/textAppearanceHeadline5</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="Header2Neutral800">
+        <item name="android:textAppearance">?attr/textAppearanceHeadline5</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+    <style name="Header3Neutral800">
+        <item name="android:textAppearance">?attr/textAppearanceHeadline6</item>
+
+    </style>
+    
+    <style name="CaptionNeutral400">
+        <item name="android:textAppearance">?attr/textAppearanceSubtitle1</item>
+    </style>
+    
+    <style name="Widget.MyTheme.Toolbar" parent="Widget.Design.CollapsingToolbar">
+        <item name="titleTextAppearance">?attr/textAppearanceHeadline5</item>
+        <item name="subtitleTextAppearance">?attr/textAppearanceBody2</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+
+    <style name="Widget.MyTheme.EventToolbar" parent="Widget.MyTheme.Toolbar">
+        <item name="android:background">@color/transparent</item>
+        <item name="titleTextColor">?attr/colorOnPrimary</item>
+        <item name="subtitleTextColor">?attr/colorSecondary</item>
+        <item name="expandedTitleMargin">0dp</item>
+    </style>
+
+    <style name="Widget.MyTheme.TeamCtfToolbar" parent="Widget.MyTheme.Toolbar">
+        <item name="titleTextColor">?attr/colorOnSurface</item>
+        <item name="titleTextAppearance">?attr/textAppearanceHeadline3</item>
+        <item name="subtitleTextColor">?attr/colorOnBackground</item>
+        <item name="subtitleTextAppearance">?attr/textAppearanceSubtitle2</item>
+        <item name="android:background">?attr/colorSurface</item>
+        <item name="android:elevation">0dp</item>
+        <item name="navigationIcon">@drawable/toolbar_back_button_state</item>
+    </style>
+
+    <style name="Widget.MyTheme.TeamCtfToolbarTitleOnly" parent="Widget.MyTheme.Toolbar">
+        <item name="titleTextColor">?attr/colorOnSurface</item>
+        <item name="titleTextAppearance">?attr/textAppearanceHeadline1</item>
+        <item name="android:background">?attr/colorSurface</item>
+        <item name="android:elevation">0dp</item>
+        <item name="navigationIcon">@drawable/toolbar_back_button_state</item>
+    </style>
+
+    <style name="Widget.MyTheme.AlertDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/Header2Neutral800</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/Body2Neutral600</item>
+        <item name="buttonBarStyle">@layout/dialog_button_layout</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Widget.MyTheme.AlertButton</item>
+        <item name="buttonBarNeutralButtonStyle">@style/Widget.MyTheme.AlertButton</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.MyTheme.AlertButton</item>
+    </style>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    android:id="@+id/event_card_signed"
+    android:layout_width="162dp"
+    android:layout_height="190dp"
+    android:layout_marginVertical="8dp"
+    android:layout_marginHorizontal="8dp"
+    app:cardElevation="0dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="162dp"
+        android:layout_height="190dp"
+        android:background="@drawable/gradient_example"
+        android:paddingHorizontal="@dimen/start_end_margin">
+
+        <TextView
+            android:id="@+id/month_signed"
+            style="@style/CardWithGradientBody2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="Апрель"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/event_signed"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/event_signed"
+            style="@style/CardWithGradientHeader6"
+            android:layout_width="@dimen/card_text_wide"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:text="Сопровождение: Мастер-класс Д.М.Менделеева"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/month_signed" />
+
+        <TextView
+            android:id="@+id/event_place_signed"
+            style="@style/CardWithGradientSubtitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="16dp"
+            android:text="Лекторий 'Поток (Депутатская, 46)"
+            app:layout_constraintBottom_toTopOf="@+id/event_starts"
+            app:layout_constraintStart_toStartOf="@id/event_signed"
+            app:layout_constraintTop_toBottomOf="@+id/event_signed" />
+
+        <TextView
+            android:id="@+id/event_starts"
+            style="@style/CardButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="6dp"
+            android:text="Через 12 часов"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

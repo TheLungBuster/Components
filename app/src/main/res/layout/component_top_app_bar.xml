@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+~ Copyright (C) 2019 The Android Open Source Project
+~
+~ Licensed under the Apache License, Version 2.0 (the "License");
+~ you may not use this file except in compliance with the License.
+~ You may obtain a copy of the License at
+~
+~      http://www.apache.org/licenses/LICENSE-2.0
+~
+~ Unless required by applicable law or agreed to in writing, software
+~ distributed under the License is distributed on an "AS IS" BASIS,
+~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+~ See the License for the specific language governing permissions and
+~ limitations under the License.
+-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="@color/green_200"
+  android:clipToPadding="false"
+  android:paddingTop="@dimen/keyline_5"
+  android:paddingBottom="@dimen/keyline_5">
+
+    <io.material.materialthemebuilder.widget.LabelLinkView
+      android:id="@+id/label"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/top_app_bar_label_title"
+      app:linkUrl="https://material.io/design/components/app-bars-top.html"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_event"
+        style="@style/Widget.MyTheme.EventToolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="14dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="teamplate"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/event_toolbar_back_button_state" />
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="14dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/share_button"
+                app:layout_constraintStart_toEndOf="@+id/back_button"
+                app:layout_constraintTop_toTopOf="parent">
+                <TextView
+                    android:id="@+id/title_event"
+                    style="@style/Header2Neutral0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Мероприятия"
+                    android:textSize="20dp"
+                    app:layout_constraintBottom_toTopOf="@+id/description_event"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                    app:layout_constraintStart_toEndOf="@+id/imageView"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/description_event"
+                    style="@style/Body2Neutral0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Сопровождение. Мастер класс Д. М. Менделеева"
+                    android:textSize="12dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                    app:layout_constraintStart_toStartOf="@+id/title_event"
+                    app:layout_constraintTop_toBottomOf="@+id/title_event" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/share_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="teamplate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/event_toolbar_share_button_state" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_team_ctf"
+        style="@style/Widget.MyTheme.TeamCtfToolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingHorizontal="12dp"
+        app:title="Команда ЦФТ"
+        app:subtitle="Управление проектами и развитие бизнеса"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_event"/>
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_team_ctf_one"
+        style="@style/Widget.MyTheme.TeamCtfToolbarTitleOnly"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingHorizontal="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_team_ctf"
+        app:title="Команда ЦФТ" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

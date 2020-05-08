@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/vacancy_notification"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/vacancy_city"
+        style="@style/Body2Neutral400"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Новосибирск"/>
+
+    <TextView
+        android:id="@+id/vacancy_name"
+        style="@style/Header3Neutral800"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Инженер-технолог / Аналитик банковских процессов (Кредиты, Гарантии)"/>
+
+    <TextView
+        android:id="@+id/vacancy_direction"
+        style="@style/Body2Neutral400"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Разработка ПО"/>
+
+    <TextView
+        android:id="@+id/vacancy_notification_time"
+        style="@style/Body2Neutral600"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="end"
+        android:text="День назад"/>
+
+</LinearLayout>

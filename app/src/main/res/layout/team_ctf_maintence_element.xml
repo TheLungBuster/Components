@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/maintenance_element"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="16dp"
+    app:layout_constraintTop_toBottomOf="@+id/settings_element"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/city"
+        style="@style/Body2Neutral400"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Новосибирск"/>
+
+    <TextView
+        android:id="@+id/name"
+        style="@style/Header3Neutral800"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Инженер-технолог / Аналитик банковских процессов (Кредиты, Гарантии)"/>
+
+    <TextView
+        android:id="@+id/status"
+        style="@style/Body2Orange600"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/status_shape_orange"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="4dp"
+        android:text="Проверка тестового задания"/>
+
+</LinearLayout>
