@@ -18,14 +18,14 @@
 
         <TextView
             android:id="@+id/setting_name"
-            style="@style/Header3Neutral800"
+            style="@style/TextAppearance.MyTheme.Headline6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Уведомлять на почту" />
 
         <TextView
             android:id="@+id/setting_description"
-            style="@style/CaptionNeutral400"
+            style="@style/TextAppearance.MyTheme.Subtitle1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"

@@ -51,7 +51,7 @@
 
     <TextView
         android:id="@+id/direction_event_notification"
-        style="@style/Header3Neutral800"
+        style="@style/TextAppearance.MyTheme.Headline6"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -64,7 +64,7 @@
 
     <TextView
         android:id="@+id/description_event_notification"
-        style="@style/Body2Neutral400"
+        style="@style/TextAppearance.MyTheme.Body2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"

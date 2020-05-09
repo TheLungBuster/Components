@@ -10,14 +10,14 @@
 
     <TextView
         android:id="@+id/city"
-        style="@style/Body2Neutral400"
+        style="@style/TextAppearance.MyTheme.Body2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Новосибирск"/>
 
     <TextView
         android:id="@+id/name"
-        style="@style/Header3Neutral800"
+        style="@style/TextAppearance.MyTheme.Headline6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
