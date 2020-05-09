@@ -204,7 +204,7 @@
         <item name="subtitleTextAppearance">?attr/textAppearanceSubtitle2</item>
         <item name="android:background">?attr/colorSurface</item>
         <item name="android:elevation">0dp</item>
-        <item name="navigationIcon">@drawable/toolbar_back_button_state</item>
+        <item name="navigationIcon">@drawable/state_toolbar_back_button</item>
     </style>
 
     <style name="Widget.MyTheme.ToolbarProfile" parent="Widget.MyTheme.Toolbar">
@@ -217,7 +217,7 @@
         <item name="titleTextAppearance">?attr/textAppearanceHeadline1</item>
         <item name="android:background">?attr/colorSurface</item>
         <item name="android:elevation">0dp</item>
-        <item name="navigationIcon">@drawable/toolbar_back_button_state</item>
+        <item name="navigationIcon">@drawable/state_toolbar_back_button</item>
     </style>
 
     <style name="Widget.MyTheme.AlertDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">

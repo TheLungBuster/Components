@@ -171,10 +171,12 @@
 
                 <ImageView
                     android:id="@+id/edit_profile"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="end|bottom"
-                    app:srcCompat="@drawable/ic_edit_red" />
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom|end"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:srcCompat="@drawable/state_edit_button" />
             </FrameLayout>
 
             <LinearLayout
