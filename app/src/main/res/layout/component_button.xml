@@ -1,221 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:paddingHorizontal="20dp">
+    android:background="@drawable/shape_alert_dialog"
+    android:paddingHorizontal="24dp"
+    android:paddingVertical="24dp"
+    android:orientation="vertical">
 
-    <LinearLayout
-        android:id="@+id/block_ok"
+    <TextView
+        android:id="@+id/alert_title"
+        style="@style/Header2Neutral800"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_marginBottom="10dp"
+        android:text="Подтверждение" />
 
-
-        <ImageView
-            android:id="@+id/we_ctf_img"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            app:srcCompat="@drawable/ic_we_ctf" />
-
-        <TextView
-            android:id="@+id/title_ok"
-            style="@style/Header2Neutral800"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="66dp"
-            android:gravity="center_horizontal"
-            android:text="Ну вот..."/>
-
-        <TextView
-            android:id="@+id/description_ok"
-            style="@style/Body1Neutral600"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:gravity="center_horizontal"
-            android:text="Но если все-таки захочешь настроить подборки, то ты можешь настроить это в вкладке профиль :)"/>
-
-        <Button
-            android:id="@+id/done_button_ok"
-            style="@style/Widget.MyTheme.PrimaryButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:text="Круто!"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/block_error"
+    <TextView
+        android:id="@+id/alert_description"
+        style="@style/Body2Neutral600"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="16dp">
+        android:layout_marginBottom="20dp"
+        android:text="Вы действительно хотите отказаться  от регистрации?" />
 
-        <ImageView
-            android:id="@+id/img_sign_error"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            app:srcCompat="@drawable/img_sign_error" />
-
-        <TextView
-            android:id="@+id/title_sign_error"
-            style="@style/Header2Neutral800"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="38dp"
-            android:gravity="center_horizontal"
-            android:text="Упс, пользователь с такими данными уже существует :("/>
-
-        <TextView
-            android:id="@+id/description_sign_error"
-            style="@style/Body1Neutral600"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:gravity="center_horizontal"
-            android:text="Если вы уже регистрировалисть, то попробуйте войти или восстановить пароль."/>
-
-        <Button
-            android:id="@+id/input_form_button"
-            style="@style/Widget.MyTheme.PrimaryButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:text="Перейти к форме входа"/>
-
-        <Button
-            android:id="@+id/pass_recovery_button"
-            style="@style/Widget.MyTheme.PrimaryButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Перейти к форме восстановления пароля"/>
-
-        <Button
-            android:id="@+id/registration_button"
-            style="@style/Widget.MyTheme.SecondaryButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Перейти к форме регистрации" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/block_develop_error"
+    <Button
+        android:id="@+id/alert_positive_button"
+        style="@style/Widget.MyTheme.SecondaryButton"
+        android:textAppearance="@style/Body1Neutral800"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="16dp">
+        android:layout_marginBottom="16dp"
+        android:text="Да, отказаться" />
 
-        <ImageView
-            android:id="@+id/img_develop_error"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/img_develop_error" />
-
-        <TextView
-            android:id="@+id/title_develop_error"
-            style="@style/Header2Neutral800"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="38dp"
-            android:gravity="center_horizontal"
-            android:text="Упс, произошла ошибка :("/>
-
-        <TextView
-            android:id="@+id/description_develop_error"
-            style="@style/Body1Neutral600"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:gravity="center_horizontal"
-            android:text="Наши разработчики, отодвинув чашку кофе, уже ищут где проблема!"/>
-
-        <Button
-            android:id="@+id/try_again_button"
-            style="@style/Widget.MyTheme.PrimaryButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:text="Попробовать еще раз"/>
-
-        <Button
-            android:id="@+id/back_to_edit_button"
-            style="@style/Widget.MyTheme.SecondaryButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Перейти к форме редактирования"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/block_network_error"
+    <Button
+        android:id="@+id/alert_negative_button"
+        style="@style/Widget.MyTheme.SecondaryButton"
+        android:textAppearance="@style/Body1Neutral800"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-
-        <ImageView
-            android:id="@+id/img_network_error"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/img_network_error" />
-
-        <TextView
-            android:id="@+id/title_network_error"
-            style="@style/Header2Neutral800"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="66dp"
-            android:gravity="center_horizontal"
-            android:text="Интернет пропал..."/>
-
-        <TextView
-            android:id="@+id/description_network_error"
-            style="@style/Body1Neutral600"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:gravity="center_horizontal"
-            android:text="Как это... Интернет пропал?"/>
-
-        <Button
-            android:id="@+id/try_again_network_button"
-            style="@style/Widget.MyTheme.PrimaryButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:text="Попробовать еще раз"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/block_title_description"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="16dp">
-
-        <TextView
-            android:id="@+id/title_block"
-            style="@style/Header2Neutral800"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:text="Мы с тобой всё настроили!"/>
-
-        <TextView
-            android:id="@+id/description_block"
-            style="@style/Body1Neutral600"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:gravity="center_horizontal"
-            android:text="Теперь можно наше приложение будет показывать тебе только то, что тебе интересно! Так же ты можешь настроить это в вкладке профиль, если вдруг понадобится :)"/>
-
-    </LinearLayout>
-
+        android:text="Нет, я пойду" />
 </LinearLayout>

@@ -79,7 +79,13 @@
     <style name="InputEditText">
         <item name="android:textAppearance">?attr/textAppearanceBody1</item>
         <item name="android:textColorHint">@color/chip_text_color</item>
-        <item name="android:background">@drawable/text_field_background</item>
+        <item name="android:background">@drawable/shape_text_field_background</item>
+    </style>
+    <style name="SearchEditText">
+        <item name="android:textAppearance">?attr/textAppearanceBody1</item>
+        <item name="android:textColorHint">?attr/colorOnBackground</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="colorControlActivated">?attr/colorPrimary</item>
     </style>
 
     <!--Chips-->
@@ -137,7 +143,7 @@
     <!--textView with date on card-->
     <style name="CardButton" parent="TextAppearance.MyTheme.Subtitle1">
         <item name="android:textColor">@color/neutral_0</item>
-        <item name="android:background">@drawable/card_time_shape</item>
+        <item name="android:background">@drawable/shape_card_time</item>
         <item name="android:textSize">11dp</item>
     </style>
 
@@ -154,6 +160,11 @@
     <!--Body 1 Color on background SP-->
     <style name="Body1Neutral600" parent="TextAppearance.MyTheme.Body1">
         <item name="android:textColor">?attr/colorOnBackground</item>
+    </style>
+
+    <!--Body 1 Color on surface SP-->
+    <style name="Body1Neutral800" parent="TextAppearance.MyTheme.Body1">
+        <item name="android:textColor">?attr/colorOnSurface</item>
     </style>
 
     <!--Body 2 DP-->

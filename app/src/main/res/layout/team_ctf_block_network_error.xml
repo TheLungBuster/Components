@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/block_network_error"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/img_network_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/img_network_error" />
+
+    <TextView
+        android:id="@+id/title_network_error"
+        style="@style/Header2Neutral800"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        android:gravity="center_horizontal"
+        android:text="Интернет пропал..."/>
+
+    <TextView
+        android:id="@+id/description_network_error"
+        style="@style/Body1Neutral600"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:text="Как это... Интернет пропал?"/>
+
+    <Button
+        android:id="@+id/try_again_network_button"
+        style="@style/Widget.MyTheme.PrimaryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Попробовать еще раз"/>
+</LinearLayout>

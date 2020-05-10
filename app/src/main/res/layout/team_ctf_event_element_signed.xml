@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
-    android:id="@+id/event_element_notification"
+    android:id="@+id/event_element_signed"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginVertical="5dp"
@@ -8,7 +8,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/event_data_card_notification"
+        android:id="@+id/event_data_card"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:cardElevation="0dp"
@@ -25,7 +25,7 @@
             android:paddingVertical="12dp">
 
             <TextView
-                android:id="@+id/event_day_notification"
+                android:id="@+id/event_day"
                 style="@style/Header2Neutral0"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -36,7 +36,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/event_month_notification"
+                android:id="@+id/event_month"
                 style="@style/Body2Neutral0"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -50,37 +50,39 @@
     </com.google.android.material.card.MaterialCardView>
 
     <TextView
-        android:id="@+id/direction_event_notification"
+        android:id="@+id/direction_event"
         style="@style/TextAppearance.MyTheme.Headline6"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="13dp"
+        android:layout_marginEnd="20dp"
         android:text="Гибкие методологии"
-        app:layout_constraintBottom_toTopOf="@+id/description_event_notification"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/event_data_card_notification"
+        app:layout_constraintBottom_toTopOf="@+id/description_event"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/event_data_card"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/description_event_notification"
+        android:id="@+id/description_event"
         style="@style/TextAppearance.MyTheme.Body2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
+        android:layout_marginEnd="20dp"
         android:text="Онлайн-лекция  ·  Начало в 17:00"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/direction_event_notification"
-        app:layout_constraintTop_toBottomOf="@+id/direction_event_notification" />
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/direction_event"
+        app:layout_constraintTop_toBottomOf="@+id/direction_event" />
 
-    <TextView
-        android:id="@+id/notification_time"
-        style="@style/Body2Neutral600"
+    <ImageView
+        android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="13dp"
-        android:text="Час назад"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="21dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/description_event_notification"
-        app:layout_constraintTop_toBottomOf="@+id/description_event_notification" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_signed_mark" />
 </androidx.constraintlayout.widget.ConstraintLayout>

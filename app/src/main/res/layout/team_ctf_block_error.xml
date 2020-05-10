@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/block_error"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/img_sign_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        app:srcCompat="@drawable/img_sign_error" />
+
+    <TextView
+        android:id="@+id/title_sign_error"
+        style="@style/Header2Neutral800"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:gravity="center_horizontal"
+        android:text="Упс, пользователь с такими данными уже существует :("/>
+
+    <TextView
+        android:id="@+id/description_sign_error"
+        style="@style/Body1Neutral600"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:text="Если вы уже регистрировалисть, то попробуйте войти или восстановить пароль."/>
+
+    <Button
+        android:id="@+id/input_form_button"
+        style="@style/Widget.MyTheme.PrimaryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Перейти к форме входа"/>
+
+    <Button
+        android:id="@+id/pass_recovery_button"
+        style="@style/Widget.MyTheme.PrimaryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Перейти к форме восстановления пароля"/>
+
+    <Button
+        android:id="@+id/registration_button"
+        style="@style/Widget.MyTheme.SecondaryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Перейти к форме регистрации" />
+</LinearLayout>

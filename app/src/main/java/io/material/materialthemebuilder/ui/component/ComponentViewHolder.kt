@@ -107,6 +107,26 @@ sealed class ComponentViewHolder(val view: View) : RecyclerView.ViewHolder(view)
     }
   }
 
+  class BlockDevelopEComponentViewHolder(
+          parent: ViewGroup
+  ) : ComponentViewHolder(inflate(parent, R.layout.team_ctf_block_develop_error))
+
+  class BlockEComponentViewHolder(
+          parent: ViewGroup
+  ) : ComponentViewHolder(inflate(parent, R.layout.team_ctf_block_error))
+
+  class BlockNetworkEComponentViewHolder(
+          parent: ViewGroup
+  ) : ComponentViewHolder(inflate(parent, R.layout.team_ctf_block_network_error))
+
+  class BlockOkComponentViewHolder(
+          parent: ViewGroup
+  ) : ComponentViewHolder(inflate(parent, R.layout.team_ctf_block_ok))
+
+  class BlockTDComponentViewHolder(
+          parent: ViewGroup
+  ) : ComponentViewHolder(inflate(parent, R.layout.team_ctf_block_title_description))
+
   class EventCardSComponentViewHolder(
     parent: ViewGroup
   ) : ComponentViewHolder(inflate(parent, R.layout.team_ctf_event_card_signed))
@@ -227,7 +247,11 @@ sealed class ComponentViewHolder(val view: View) : RecyclerView.ViewHolder(view)
         SNACKBAR -> ComponentViewHolder.SnackbarComponentViewHolder(parent)
         DIALOG -> ComponentViewHolder.DialogComponentViewHolder(parent)
         BOTTOM_SHEET -> ComponentViewHolder.BottomSheetComponentViewHolder(parent, listener)
-        BUTTON -> ComponentViewHolder.ButtonComponentViewHolder(parent)
+        BLOCK_DEVELOP_ERROR -> ComponentViewHolder.BlockDevelopEComponentViewHolder(parent)
+        BLOCK_ERROR -> ComponentViewHolder.BlockEComponentViewHolder(parent)
+        BLOCK_NETWORK_ERROR ->ComponentViewHolder.BlockNetworkEComponentViewHolder(parent)
+        BLOCK_OK ->ComponentViewHolder.BlockOkComponentViewHolder(parent)
+        BLOCK_TITLE_DESCRIPTION ->ComponentViewHolder.BlockTDComponentViewHolder(parent)
         EVENT_CARD_SIGNED -> ComponentViewHolder.EventCardSComponentViewHolder(parent)
         EVENT_CARD_UNSIGNED -> ComponentViewHolder.EventCardUnSComponentViewHolder(parent)
         EVENT_ELEMENT -> ComponentViewHolder.EventEComponentViewHolder(parent)
