@@ -1,4 +1,3 @@
-# Project exclude paths
 # built application files
 *.apk
 *.ap_
@@ -14,4 +13,4 @@ bin/
 gen/
 
 # Local configuration file (sdk path, etc)
-local.propertiesiates/javac/debug/classes/
+local.properties
