@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/alert_positive_negative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_alert_dialog"
+    android:orientation="vertical"
+    android:paddingHorizontal="24dp"
+    android:paddingVertical="24dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/alert_title"
+        style="@style/Header2Neutral800"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Подтверждение" />
+
+    <TextView
+        android:id="@+id/alert_description"
+        style="@style/Body2Neutral600"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Вы действительно хотите отказаться от регистрации?" />
+
+    <Button
+        android:id="@+id/alert_positive_button"
+        style="@style/Widget.MyTheme.SecondaryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Да, отказаться"
+        android:textColor="?attr/colorOnSurface" />
+
+    <Button
+        android:id="@+id/alert_negative_button"
+        style="@style/Widget.MyTheme.SecondaryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Нет, я пойду"
+        android:textColor="?attr/colorOnSurface" />
+</LinearLayout>

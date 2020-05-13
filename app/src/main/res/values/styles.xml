@@ -114,6 +114,9 @@
     <style name="Widget.MyTheme.Radiobutton" parent="Widget.MaterialComponents.CompoundButton.RadioButton">
         <item name="useMaterialThemeColors">false</item>
         <item name="buttonTint">@color/togle_elements_color</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:textAppearance">@style/Body1Neutral800</item>
     </style>
 
     <!--Checkbox-->
@@ -204,8 +207,6 @@
 
     <!--Toolbar parent-->
     <style name="Widget.MyTheme.Toolbar" parent="Widget.Design.CollapsingToolbar">
-        <item name="titleTextAppearance">?attr/textAppearanceHeadline5</item>
-        <item name="subtitleTextAppearance">?attr/textAppearanceBody2</item>
         <item name="android:elevation">0dp</item>
     </style>
 
@@ -215,28 +216,9 @@
         <item name="expandedTitleMargin">0dp</item>
     </style>
 
-    <!--Main toolbar with subtitle-->
-    <style name="Widget.MyTheme.TeamCtfToolbar" parent="Widget.MyTheme.Toolbar">
-        <item name="titleTextColor">?attr/colorOnSurface</item>
-        <item name="titleTextAppearance">@style/Header2DP</item>
-        <item name="subtitleTextColor">?attr/colorOnBackground</item>
-        <item name="subtitleTextAppearance">@style/Body2DP</item>
-        <item name="android:background">?attr/colorSurface</item>
-        <item name="navigationIcon">@drawable/state_toolbar_back_button</item>
-    </style>
-
-    <!--Profile toolbar-->
-    <style name="Widget.MyTheme.ToolbarProfile" parent="Widget.MyTheme.Toolbar">
-        <item name="android:background">?attr/colorSurface</item>
-    </style>
-
     <!--Main toolbar-->
-    <style name="Widget.MyTheme.TeamCtfToolbarTitleOnly" parent="Widget.MyTheme.Toolbar">
-        <item name="titleTextColor">?attr/colorOnSurface</item>
-        <item name="titleTextAppearance">@style/Header1DP</item>
+    <style name="Widget.MyTheme.MainToolbar" parent="Widget.MyTheme.Toolbar">
         <item name="android:background">?attr/colorSurface</item>
-        <item name="android:elevation">0dp</item>
-        <item name="navigationIcon">@drawable/state_toolbar_back_button</item>
     </style>
 
     <style name="Widget.MyTheme.AlertDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
