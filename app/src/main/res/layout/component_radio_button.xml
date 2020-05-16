@@ -45,14 +45,14 @@
       app:layout_constraintEnd_toEndOf="parent">
 
         <RadioButton
-          style="@style/Widget.MyTheme.Radiobutton"
+          style="@style/Radiobutton"
           android:id="@+id/radio_button_one"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:checked="true" />
 
         <RadioButton
-          style="@style/Widget.MyTheme.Radiobutton"
+          style="@style/Radiobutton"
           android:id="@+id/radio_button_two"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content" />

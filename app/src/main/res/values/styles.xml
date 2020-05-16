@@ -111,11 +111,12 @@
     </style>
 
     <!--Radiobutton-->
-    <style name="Widget.MyTheme.Radiobutton" parent="Widget.MaterialComponents.CompoundButton.RadioButton">
-        <item name="useMaterialThemeColors">false</item>
+    <style name="Radiobutton">
         <item name="buttonTint">@color/togle_elements_color</item>
+        <item name="android:background">@android:color/transparent</item>
         <item name="android:textAlignment">textStart</item>
         <item name="android:layout_gravity">start</item>
+        <item name="android:button">@drawable/state_radio_button</item>
         <item name="android:textAppearance">@style/Body1Neutral800</item>
     </style>
 
