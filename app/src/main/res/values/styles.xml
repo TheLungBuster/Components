@@ -124,6 +124,8 @@
     <style name="Widget.MyTheme.CheckBox" parent="Widget.MaterialComponents.CompoundButton.CheckBox">
         <item name="useMaterialThemeColors">false</item>
         <item name="buttonTint">@color/togle_elements_color</item>
+        <item name="android:background">@drawable/state_done_button</item>
+        <item name="android:button">@null</item>
     </style>
 
     <!--Heading 3 Neutral 0 DP-->
