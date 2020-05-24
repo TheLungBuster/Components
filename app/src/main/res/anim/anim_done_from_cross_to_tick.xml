@@ -60,7 +60,7 @@
                     android:propertyName="strokeColor"
                     android:duration="300"
                     android:valueFrom="#2e2122"
-                    android:valueTo="#ffffff"
+                    android:valueTo="#ed1941"
                     android:valueType="colorType"
                     android:interpolator="@android:interpolator/fast_out_slow_in"/>
             </set>
@@ -100,7 +100,7 @@
                     android:propertyName="strokeColor"
                     android:duration="300"
                     android:valueFrom="#2e2122"
-                    android:valueTo="#ffffff"
+                    android:valueTo="#ed1941"
                     android:valueType="colorType"
                     android:interpolator="@android:interpolator/fast_out_slow_in"/>
             </set>
@@ -112,7 +112,7 @@
                 android:propertyName="fillColor"
                 android:duration="300"
                 android:valueFrom="#efefef"
-                android:valueTo="#ed1941"
+                android:valueTo="#29ed1941"
                 android:valueType="colorType"
                 android:interpolator="@android:interpolator/fast_out_slow_in"/>
         </aapt:attr>

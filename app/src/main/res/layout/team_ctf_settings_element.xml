@@ -35,8 +35,8 @@
     <CheckBox
         android:id="@+id/checkBox"
         style="@style/Widget.MyTheme.CheckBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="13dp"
         android:layout_marginBottom="13dp"

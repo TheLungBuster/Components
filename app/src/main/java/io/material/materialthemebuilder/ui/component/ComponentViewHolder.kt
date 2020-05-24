@@ -22,12 +22,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.FrameLayout
 import androidx.core.content.ContextCompat
-import androidx.drawerlayout.widget.DrawerLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomappbar.BottomAppBar
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import com.google.android.material.navigation.NavigationView
 import com.google.android.material.snackbar.Snackbar
 import io.material.materialthemebuilder.R
 import io.material.materialthemebuilder.ui.component.Component.*
@@ -141,7 +139,7 @@ sealed class ComponentViewHolder(val view: View) : RecyclerView.ViewHolder(view)
 
   class EventNComponentViewHolder(
           parent: ViewGroup
-  ) : ComponentViewHolder(inflate(parent, R.layout.team_ctf_event_notification))
+  ) : ComponentViewHolder(inflate(parent, R.layout.team_ctf_notification_event))
 
   class HotDEComponentViewHolder(
           parent: ViewGroup
@@ -157,7 +155,7 @@ sealed class ComponentViewHolder(val view: View) : RecyclerView.ViewHolder(view)
 
   class MaintenceNComponentViewHolder(
           parent: ViewGroup
-  ) : ComponentViewHolder(inflate(parent, R.layout.team_ctf_maintence_notification))
+  ) : ComponentViewHolder(inflate(parent, R.layout.team_ctf_notification_maintence))
 
   class SettingsEComponentViewHolder(
           parent: ViewGroup
@@ -169,7 +167,7 @@ sealed class ComponentViewHolder(val view: View) : RecyclerView.ViewHolder(view)
 
   class VacancyNComponentViewHolder(
           parent: ViewGroup
-  ) : ComponentViewHolder(inflate(parent, R.layout.team_ctf_vacancy_notification))
+  ) : ComponentViewHolder(inflate(parent, R.layout.team_ctf_notification_vacancy))
 
   class SnackbarComponentViewHolder(
     parent: ViewGroup
@@ -255,14 +253,14 @@ sealed class ComponentViewHolder(val view: View) : RecyclerView.ViewHolder(view)
         EVENT_CARD_SIGNED -> ComponentViewHolder.EventCardSComponentViewHolder(parent)
         EVENT_CARD_UNSIGNED -> ComponentViewHolder.EventCardUnSComponentViewHolder(parent)
         EVENT_ELEMENT -> ComponentViewHolder.EventEComponentViewHolder(parent)
-        EVENT_NOTIFICATION -> ComponentViewHolder.EventNComponentViewHolder(parent)
         HOT_DIRECTION_ELEMENT -> ComponentViewHolder.HotDEComponentViewHolder(parent)
         HOT_VACANCY_ELEMENT -> ComponentViewHolder.HotVEComponentViewHolder(parent)
         MAINTENCE_ELEMENT -> ComponentViewHolder.MaintenceEComponentViewHolder(parent)
-        MAINTENCE_NOTIFICATION -> ComponentViewHolder.MaintenceNComponentViewHolder(parent)
         SETTINGS_ELEMENT -> ComponentViewHolder.SettingsEComponentViewHolder(parent)
         START_CARRIER_ELEMENT -> ComponentViewHolder.StartCEComponentViewHolder(parent)
         VACANCY_NOTIFICATION -> ComponentViewHolder.VacancyNComponentViewHolder(parent)
+        MAINTENCE_NOTIFICATION -> ComponentViewHolder.MaintenceNComponentViewHolder(parent)
+        EVENT_NOTIFICATION -> ComponentViewHolder.EventNComponentViewHolder(parent)
       }
     }
 

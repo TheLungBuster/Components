@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/maintenance_notification"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="5dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/icon_notification_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:srcCompat="@drawable/ic_notification_response_status" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/maintenance_name_notification"
+            style="@style/Body1Neutral800"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Статус отклика вакансии “Инженер-технолог / Аналитик банковских процессов (Кредиты, Гарантии)” был изменен на " />
+
+        <TextView
+            android:id="@+id/maintenance_status_notification"
+            style="@style/Body2Orange600"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/shape_status_orange"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp"
+            android:text="Принято тестовое задание" />
+
+        <TextView
+            android:id="@+id/notification_time"
+            style="@style/TextAppearance.MyTheme.Subtitle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="end"
+            android:text="Час назад" />
+
+    </LinearLayout>
+
+</LinearLayout>

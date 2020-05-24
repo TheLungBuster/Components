@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/vacancy_notification"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="5dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/icon_notification_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:srcCompat="@drawable/ic_notification_estimate_event" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/vacancy_name"
+            style="@style/Body1Neutral800"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Мероприятие “Гибкие методологии” закончилось, тебе понравилось? :)" />
+
+        <TextView
+            android:id="@+id/vacancy_notification_time"
+            style="@style/TextAppearance.MyTheme.Subtitle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="end"
+            android:text="День назад" />
+    </LinearLayout>
+</LinearLayout>

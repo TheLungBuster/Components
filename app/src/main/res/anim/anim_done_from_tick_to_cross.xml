@@ -51,7 +51,7 @@
                 <objectAnimator
                     android:propertyName="strokeColor"
                     android:duration="300"
-                    android:valueFrom="#ffffff"
+                    android:valueFrom="#ed1941"
                     android:valueTo="#2e2122"
                     android:valueType="colorType"
                     android:interpolator="@android:interpolator/fast_out_slow_in"/>
@@ -71,7 +71,7 @@
                 <objectAnimator
                     android:propertyName="strokeColor"
                     android:duration="300"
-                    android:valueFrom="#ffffff"
+                    android:valueFrom="#ed1941"
                     android:valueTo="#2e2122"
                     android:valueType="colorType"
                     android:interpolator="@android:interpolator/fast_out_slow_in"/>
@@ -114,10 +114,10 @@
             <objectAnimator
                 android:propertyName="fillColor"
                 android:duration="300"
-                android:valueFrom="#ed1941"
+                android:valueFrom="#29ed1941"
                 android:valueTo="#efefef"
                 android:valueType="colorType"
-                android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                android:interpolator="@android:interpolator/linear"/>
         </aapt:attr>
     </target>
 </animated-vector>
